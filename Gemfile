@@ -1,4 +1,8 @@
 source 'https://rubygems.org'
+
+
+gem 'devise'
+gem 'devise-bootstrap-views'
 # bootstrap
 gem 'bootstrap-sass', '~>3.3.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -36,6 +40,7 @@ group :development, :test do
   gem 'byebug'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  gem 'rails_db'
 end
 
 group :development do

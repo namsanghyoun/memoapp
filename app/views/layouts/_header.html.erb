@@ -6,7 +6,11 @@
         <%# TODO: '네비게이션 바 편집기.' %>
         <li><%=link_to 'HOME',root_path %></li>
         <li><%=link_to 'MEMO','#'%></li>
-        <li><%=link_to 'LogIn','#'%></li>
+        <% if user_signed_in? %>
+          <li><%= link_to 'LogOut',destroy_user_session_path, method: :delete%></li>
+        <% else %>
+        <li><%=link_to 'LogIn',new_user_session_path%></li>
+        <% end %>
       </ul>
     </nav>
   </div>
