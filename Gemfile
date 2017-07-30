@@ -75,5 +75,5 @@ end
 group :production do
   # PostgreSQL DB
   gem 'pg'
-  ruby "2.3.4"
+  
 end
