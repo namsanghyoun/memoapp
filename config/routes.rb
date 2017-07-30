@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+
   root 'memos#index'
   resources :memos do
     resources :comments, only: [:create, :destroy]
