@@ -1,15 +1,14 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to 'MEMO app', root_path, id: 'logo' %>
+    <%= link_to 'Memo app', root_path, id: 'logo'%>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <%# TODO: '네비게이션 바 편집기.' %>
-        <li><%=link_to 'HOME',root_path %></li>
-        <li><%=link_to 'MEMO','#'%></li>
-        <% if user_signed_in? %>
-          <li><%= link_to 'LogOut',destroy_user_session_path, method: :delete%></li>
-        <% else %>
-        <li><%=link_to 'LogIn',new_user_session_path%></li>
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'New Memo', new_memo_path %></li>
+        <% if user_signed_in? #로그인을 했으면? %>
+          <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
+        <% else #로그인을 안했으면 %>
+          <li><%= link_to 'Log in', new_user_session_path %></li>
         <% end %>
       </ul>
     </nav>

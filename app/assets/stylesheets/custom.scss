@@ -4,8 +4,15 @@
 @import "rails_bootstrap_forms";
 
 // universal
+
 body {
   padding-top: 80px;
+}
+
+.table td.fit,
+.table th.fit {
+  white-space: nowrap;
+  width: 1%;
 }
 
 // header
@@ -23,4 +30,21 @@ body {
     color: #fff;
     text-decoration: none;
   }
+}
+
+// errors
+#error_explanation{
+  color: red;
+  ul {
+  color: red;
+  margin: 0 0 30px 0;
+  }
+}
+
+.alert-alert {
+  color: red;
+}
+
+.alert-notice {
+  color: green;
 }

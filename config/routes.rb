@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   
-  resources :memos #restful 꽃길 라우팅
-  devise_for :users
   root 'memos#index'
+  resources :memos do
+    resources :comments, only: [:create, :destroy]
+  end
+  devise_for :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

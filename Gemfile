@@ -1,20 +1,29 @@
 source 'https://rubygems.org'
 
-#pagenation
-gem 'kaminari'
-#time
-gem 'local_time'
 
-#editor
-gem 'tinymce-rails'
-#devise
-gem 'devise'
-gem 'devise-bootstrap-views'
-# bootstrap
-gem 'bootstrap-sass', '~>3.3.6'
-gem 'bootstrap_form'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
+
+# 회원관리
+gem 'devise'
+gem 'devise-bootstrap-views'
+
+# Bootstrap
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap_form'
+
+# Editor
+gem 'tinymce-rails'
+
+# time format
+gem 'local_time'
+
+# Pagination
+gem 'kaminari'
+
+# Locale
+gem 'rails-i18n'
+gem 'devise-i18n'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -34,6 +43,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -49,6 +59,7 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   gem 'rails_db'
+  # 진화한 콘솔
   gem 'pry'
   gem 'pry-rails'
 end
@@ -62,6 +73,6 @@ group :development do
 end
 
 group :production do
-   # Use PostgreSQL as the database for Active Record
+  # PostgreSQL DB
   gem 'pg'
 end
