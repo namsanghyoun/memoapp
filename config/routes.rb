@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :memos #restful 꽃길 라우팅
   devise_for :users
   root 'home#index'
 

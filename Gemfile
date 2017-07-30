@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
-
+#editor
+gem 'tinymce-rails'
+#devise
 gem 'devise'
 gem 'devise-bootstrap-views'
 # bootstrap
 gem 'bootstrap-sass', '~>3.3.6'
+gem 'bootstrap_form'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 
@@ -41,6 +44,8 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   gem 'rails_db'
+  gem 'pry'
+  gem 'pry-rails'
 end
 
 group :development do
