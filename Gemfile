@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 
+# 회원관리
 gem 'devise'
 gem 'devise-bootstrap-views'
 
@@ -74,5 +75,4 @@ end
 group :production do
   # PostgreSQL DB
   gem 'pg'
-  gem 'rails_12factor'
 end
