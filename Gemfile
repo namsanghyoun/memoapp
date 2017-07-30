@@ -1,11 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '2.3.4'
 gem 'puma'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
-gem 'rails_12factor'
+
 # 회원관리
 gem 'devise'
 gem 'devise-bootstrap-views'
@@ -51,11 +49,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
-  gem 'rails_db'
-  # 진화한 콘솔
-  gem 'pry'
-  gem 'pry-rails'
+
 end
 
 group :development do
