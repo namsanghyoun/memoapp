@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+#pagenation
+gem 'kaminari'
+#time
+gem 'local_time'
+
 #editor
 gem 'tinymce-rails'
 #devise

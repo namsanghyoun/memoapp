@@ -1,2 +1,22 @@
-<h1>Memos#index</h1>
-<p>Find me in app/views/memos/index.html.erb</p>
+<h1>memo app</h1>
+<div class="table-responsive">
+    <table class="table table-fit">
+        <thead>
+            <tr>
+                <th>title</th>
+                <th>user</th>
+                <th>comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @memos.each do |memo|%>
+            <tr>
+               <td><%= link_to memo.title, memo %></td>
+               <td><%= memo.user.email %></td>
+               <td>100</td> 
+            </tr>
+            <%end%>
+        </tbody>
+    </table>
+    <%=paginate @memos%>
+</div>

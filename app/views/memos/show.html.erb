@@ -1,2 +1,13 @@
-<h1>Memos#show</h1>
-<p>Find me in app/views/memos/show.html.erb</p>
+<h1><%=@memo.title %></h1>
+</hr>
+<h2>by <%=@memo.user.email %></h2>
+<h3><%= icon 'time'%>local_time(<%=@memo.created_at %>)</h3>
+<%= icon 'pencil'%><%= link_to '수정하기', edit_memo_path %> | <%= icon 'trash'%>
+</hr>
+<div class="well">
+    댓글작성창 
+</div>
+</hr>
+<div>
+    
+</div>
