@@ -1,22 +1,22 @@
-<h1>memo app</h1>
+<h1>Hack Your Memo</h1>
 <div class="table-responsive">
-    <table class="table table-fit">
-        <thead>
-            <tr>
-                <th>title</th>
-                <th>user</th>
-                <th>comments</th>
-            </tr>
-        </thead>
-        <tbody>
-            <% @memos.each do |memo|%>
-            <tr>
-               <td><%= link_to memo.title, memo %></td>
-               <td><%= memo.user.email %></td>
-               <td>100</td> 
-            </tr>
-            <%end%>
-        </tbody>
-    </table>
-    <%=paginate @memos%>
+  <table class="table table-fit">
+    <thead>
+      <tr>
+        <th>title</th>
+        <th>user</th>
+        <th>comments</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @memos.each do |memo| %>
+        <tr>
+          <td><%= link_to memo.title, memo %></td>
+          <td><%= memo.user.email %></td>
+          <td><%= memo.comments.count %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= paginate @memos %>
 </div>
