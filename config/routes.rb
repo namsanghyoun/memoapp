@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'home/index'
+
   root 'memos#index'
   resources :memos do
     resources :comments, only: [:create, :destroy]
